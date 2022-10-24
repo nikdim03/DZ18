@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodCell" rowHeight="66" id="FfG-ut-a4B" customClass="FoodCell" customModule="DZ18" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FfG-ut-a4B" id="sIG-1C-tFi">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="171" translatesAutoresizingMaskIntoConstraints="NO" id="WwT-UR-VWu">
+                        <rect key="frame" x="20" y="10" width="350" height="46"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rve-ef-umt">
+                                <rect key="frame" x="0.0" y="0.0" width="129" height="46"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P6r-CS-uag" userLabel="Name Bubble">
+                                        <rect key="frame" x="0.0" y="0.0" width="129" height="28"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dnd-hA-hgj">
+                                                <rect key="frame" x="42" y="4" width="45" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Dnd-hA-hgj" firstAttribute="centerY" secondItem="P6r-CS-uag" secondAttribute="centerY" id="7sp-gk-cXb"/>
+                                            <constraint firstItem="Dnd-hA-hgj" firstAttribute="centerX" secondItem="P6r-CS-uag" secondAttribute="centerX" id="K4K-BD-S4d"/>
+                                            <constraint firstAttribute="height" constant="28" id="ilf-Yu-bUC"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nE2-h1-y4g" userLabel="Category Bubble">
+                                        <rect key="frame" x="0.0" y="33" width="129" height="13"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5Q-08-BCE">
+                                                <rect key="frame" x="42.333333333333329" y="0.6666666666666643" width="44.333333333333329" height="12"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="13" id="HUs-LZ-Tf6"/>
+                                            <constraint firstItem="a5Q-08-BCE" firstAttribute="centerY" secondItem="nE2-h1-y4g" secondAttribute="centerY" id="YGD-gi-M0d"/>
+                                            <constraint firstItem="a5Q-08-BCE" firstAttribute="centerX" secondItem="nE2-h1-y4g" secondAttribute="centerX" id="m2x-S1-Jsu"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="P6r-CS-uag" secondAttribute="trailing" id="3Q0-CA-JIu"/>
+                                    <constraint firstItem="nE2-h1-y4g" firstAttribute="leading" secondItem="rve-ef-umt" secondAttribute="leading" id="FIA-q1-Ffl"/>
+                                    <constraint firstItem="P6r-CS-uag" firstAttribute="leading" secondItem="rve-ef-umt" secondAttribute="leading" id="XVL-A4-LP9"/>
+                                    <constraint firstAttribute="trailing" secondItem="nE2-h1-y4g" secondAttribute="trailing" id="eqW-EJ-Tnl"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UTU-cp-6Ji" userLabel="Price Bubble">
+                                <rect key="frame" x="300" y="0.0" width="50" height="46"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m68-yD-Dlb">
+                                        <rect key="frame" x="5.6666666666666856" y="12.999999999999998" width="38.666666666666664" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemGreenColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.71284206829999996" green="0.94509804249999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="AiS-Kn-tvN"/>
+                                    <constraint firstItem="m68-yD-Dlb" firstAttribute="centerX" secondItem="UTU-cp-6Ji" secondAttribute="centerX" id="J7F-ST-y3x"/>
+                                    <constraint firstItem="m68-yD-Dlb" firstAttribute="centerY" secondItem="UTU-cp-6Ji" secondAttribute="centerY" id="kx8-ja-xPQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="WwT-UR-VWu" secondAttribute="trailing" constant="20" id="ASE-3N-WcW"/>
+                    <constraint firstItem="WwT-UR-VWu" firstAttribute="leading" secondItem="sIG-1C-tFi" secondAttribute="leading" constant="20" id="QLc-hE-rt4"/>
+                    <constraint firstAttribute="bottom" secondItem="WwT-UR-VWu" secondAttribute="bottom" constant="10" id="rfm-KV-gMA"/>
+                    <constraint firstItem="WwT-UR-VWu" firstAttribute="top" secondItem="sIG-1C-tFi" secondAttribute="top" constant="10" id="zM4-G6-iGu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="categoryBubble" destination="nE2-h1-y4g" id="ISA-Jt-uue"/>
+                <outlet property="categoryLabel" destination="a5Q-08-BCE" id="Rda-GX-yy4"/>
+                <outlet property="nameBubble" destination="P6r-CS-uag" id="qSr-E0-ESw"/>
+                <outlet property="nameLabel" destination="Dnd-hA-hgj" id="Beb-5A-ZFA"/>
+                <outlet property="priceBubble" destination="UTU-cp-6Ji" id="6zs-b9-OTO"/>
+                <outlet property="priceLabel" destination="m68-yD-Dlb" id="e5z-Ya-K4v"/>
+            </connections>
+            <point key="canvasLocation" x="213.84615384615384" y="-15.639810426540283"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
